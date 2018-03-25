@@ -1,0 +1,13 @@
+focus_tree = {
+	id = white_rus_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	
+}

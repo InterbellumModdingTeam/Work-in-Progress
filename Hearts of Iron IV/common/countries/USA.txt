@@ -1,0 +1,4 @@
+graphical_culture = 
+graphical_culture_2d = 	 
+
+color = { 0  0  0 }

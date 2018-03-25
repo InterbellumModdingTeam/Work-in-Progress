@@ -1,0 +1,16 @@
+focus_tree = {
+	id = china
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	
+
+	default = no
+
+}

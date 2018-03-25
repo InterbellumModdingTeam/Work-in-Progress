@@ -1,0 +1,102 @@
+capital = 0
+
+oob = "FRA_1920"
+
+set_research_slots = 0
+
+# Starting tech
+set_technology = {
+}
+
+set_politics = {
+
+	parties = {
+		fascism = { 
+			popularity = 
+		}	
+	
+		democratic = { 
+			popularity = 
+		}
+		
+		communism = {
+			popularity = 
+		}	
+	}
+}
+
+create_country_leader = {
+	name = ""
+	desc = ""
+	picture = "gfx/leaders/Europe/"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = ""
+	desc = ""
+	picture = "gfx/leaders/Europe/"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = ""
+	desc = ""
+	picture = "gfx/leaders/Europe"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "" 
+	desc = "" 
+	picture = "gfx/leaders/Europe/"
+	ideology = fascism_ideology 
+	traits = { 
+		
+	}
+}
+
+create_field_marshal = { 
+	name = "" 
+	picture = "" 
+	traits = {  offensive_doctrine armor_officer } 
+	skill = 1
+	id = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = ""
+	picture = ""
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	id = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = ""
+		picture = ""
+	traits = { seawolf }
+	skill = 5
+	id = 26
+}
+

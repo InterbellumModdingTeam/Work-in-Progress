@@ -1,0 +1,160 @@
+########################################################################################################
+## This is how the country file can/needs to look. in all files created by me the Capital will be 0   ##
+## You can later change this when the map is finished and capitals states are availble.               ## 
+## In the below file i shall use the ## coment tag to comment on what is missing                      ##
+## Any questions or stuck, please ask me on Github or Discord										  ##
+## Cheers [NL]Ibahalii																				  ##
+########################################################################################################
+
+
+
+##Change the 0 into the state_ID of the nation(for instance for Amsterdam 7)
+capital = 0 ##numeric value needed.
+
+##This is for the starting units, These files will be created and no need to change these.
+oob = "GER_1920" 
+
+##Set the number of research slots at the start of the game
+set_research_slots = 0 ##numeric vlue needed.
+
+##Starting tech for the country
+##To give the country a tech, use a command like so:
+set_technology = {
+	infantry_weapons = 1
+}
+##Technames will depend on the techtree when finished.
+
+##Political climate of the country
+set_politics = {
+
+	parties = {
+		fascism = { 
+			popularity = 0 ##Numeric value required to resprecent the % of the party
+		}	
+	
+		democratic = { 
+			popularity = 0 ##Numeric value required to resprecent the % of the party
+		}
+		
+		communism = {
+			popularity = 0 ##Numeric value required to resprecent the % of the party
+		}
+		
+		neutrality = { 
+			popularity = 0 ##Numeric value required to resprecent the % of the party
+		}		
+	}
+}
+##Combined the parties cannot exceed 100.
+
+##The leaders for each party(and the ruling party will become the leader of the country)
+create_country_leader = {
+	name = "" ## Name it what is needed.
+	desc = "" ## a discription for your leader specified in the localization file
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds" ##GFX location
+	expire = "1953.3.1" ##When will this person no longer be availble
+	ideology = fascism_ideology ## what party does this person belong to.
+	traits = { ##any traits this person has
+		
+	}
+}
+
+create_country_leader = {
+	name = "" ## Name it what is needed.
+	desc = "" ## a discription for your leader specified in the localization file
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" ##GFX location
+	expire = "1953.3.1" ##When will this person no longer be availble
+	ideology = conservatism ## what party does this person belong to.
+	traits = { ##any traits this person has
+		
+	}
+}
+
+create_country_leader = {
+	name = "" ## Name it what is needed.
+	desc = "" ## a discription for your leader specified in the localization file
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds" ##GFX location
+	expire = "1953.3.1" ##When will this person no longer be availble
+	ideology = stalinism ## what party does this person belong to.
+	traits = { ##any traits this person has
+		
+	}
+}
+
+create_country_leader = {
+	name = "" ## Name it what is needed.
+	desc = "" ## a discription for your leader specified in the localization file
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds" ##GFX location
+	expire = "1953.3.1" ##When will this person no longer be availble
+	ideology = despotism ## what party does this person belong to.
+	traits = { ##any traits this person has 
+		
+	}
+}
+
+
+## creating some starting commanders for the player to work with
+create_field_marshal = { ##type of leader
+	name = "" ##Name of this commander
+	picture = "" ##GFX location
+	traits = {  offensive_doctrine armor_officer } ## Traits for the commander
+	##Skill level and points in the traits. Change as is needed
+	skill = 1
+	id = 1 ##cannot be the same as any other field marshal in the game(for this country or any others)
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+##same as above, just chance as described earlier
+create_corps_commander = {
+	name = ""
+	picture = ""
+	traits = { trait_cautious armor_officer }
+	skill = 1
+	id = 1 ##cannot be the same as any other country general in the game(for this country or any others)
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+##Same as the land based, just one for naval
+create_navy_leader = {
+	name = ""
+		picture = ""
+	traits = { seawolf }
+	skill = 5
+	id = 26 ##cannot be the same as any other country admiral in the game(for this country or any other)
+}
+
+##IF the country already has different versions of the equipment use these commands. 
+##IF the country has NOT got any different versions do NOT use this bit of code.
+
+##Naval units example
+create_equipment_variant = {
+	name = "Königsberg Class"
+	type = light_cruiser_1
+	parent_version = 0
+	upgrades = {
+		ship_reliability_upgrade = 2
+		ship_engine_upgrade = 2
+		ship_gun_upgrade = 2
+		ship_anti_air_upgrade = 2
+	}
+	obsolete = yes
+}
+
+##Air unit example
+create_equipment_variant = {
+	name = "Ju 86"
+	type = tac_bomber_equipment_0
+	upgrades = {
+		plane_tac_bomb_upgrade = 5
+		plane_range_upgrade = 5
+		plane_engine_upgrade = 5
+		plane_reliability_upgrade = 10
+	}
+	obsolete = yes
+}

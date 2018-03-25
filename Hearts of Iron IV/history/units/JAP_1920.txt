@@ -1,0 +1,45 @@
+division_template = {
+	name = ""
+
+	division_names_group = JAP_INF_1
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		light_armor = { x = 3 y = 0}
+	}
+	
+	support = {
+		recon = { x = 0 y = 0 }      # Motorized recon inf bn
+	}
+	priority = 2
+}
+
+units = {
+	#name of the army
+	division = {
+		name = ""
+		location = 
+		division_template = ""
+		start_experience_factor = 0
+	}
+
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "JAP"
+		}
+		requested_factories = 0
+		progress = 0
+		efficiency = 0
+	}
+}
