@@ -1,6 +1,6 @@
 ########################################################################################################
 ## This is the OOB file example, with ## marks the values that need changing are highlighted          ##
-## Cheer [NL]ibahalii                                                                                 ##
+## Cheers [NL]ibahalii                                                                                 ##
 ########################################################################################################
 
 ##Creating a new division template, need to make a new one for each division template you want.
