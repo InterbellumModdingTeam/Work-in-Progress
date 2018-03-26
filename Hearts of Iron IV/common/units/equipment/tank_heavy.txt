@@ -4,7 +4,7 @@
 ## For instance 'heavy_tank_equipment_1' becomes 'heavy_tank_equipment_2'        ##
 ## Unlike the Infantry weapons we also need to include the TD, SPG and MAA here. ##
 ## All stats and values been set to '0' to allow complete freedom in creation.   ##
-## Cheers [NL]Ibahalii													         ##
+## Cheers [NL]Ibahalii							         ##
 ###################################################################################
 
 equipments = {
