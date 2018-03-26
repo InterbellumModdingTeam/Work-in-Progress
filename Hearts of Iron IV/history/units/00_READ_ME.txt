@@ -1,6 +1,6 @@
 ########################################################################################################
 ## This is the OOB file example, with ## marks the values that need changing are highlighted          ##
-## Cheer [NL]ibahalii
+## Cheer [NL]ibahalii                                                                                 ##
 ########################################################################################################
 
 ##Creating a new division template, need to make a new one for each division template you want.
@@ -24,14 +24,14 @@ division_template = {
 	priority = 2
 }
 
-##The name of the division on a map(if there is one deployed already..
+##The name of the division on a map(if there is one deployed already)
 units = {
 	##create more armies(divisions) using the 'division = { } tag
 	division = {
 		name = "" ## What name will this unit get?
 		location = ## what PROVINCE is this unit standing?(NOTE this CANNOT be a state_ID, it has to be a province_ID).
 		division_template = "" ##What template does this unit use?(has to be a name from one of the templates you created above.
-		start_experience_factor = 0 ##How much XP does this unit have?\
+		start_experience_factor = 0 ##How much XP does this unit have?
 		start_equipment_factor = 0 ##How much % of their equipment does the unit have? 0 = 0%. 1 = 100% use decimals to set a value inbetween, per example 0.65 = 65% of their total needed equipment
 	}
 
