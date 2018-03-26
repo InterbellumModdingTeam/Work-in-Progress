@@ -58,16 +58,6 @@ create_country_leader = {
 	}
 }
 
-create_country_leader = {
-	name = "" 
-	desc = "" 
-	picture = "gfx/leaders/Europe/"
-	ideology = fascism_ideology 
-	traits = { 
-		
-	}
-}
-
 create_field_marshal = { 
 	name = "" 
 	picture = "" 
